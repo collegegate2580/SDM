@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="SSM Security and Bouncer Services" />
+    <meta property="og:title" content="SDM Security and Bouncer Services" />
     <meta property="og:description" content="Professional security and bouncer services across India" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ssmsecurity.com" />
-    <title>SDM Security & Bouncer Services | Home</title>
+    <title>SSM Security & Bouncer Services | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
-<body>
+<body class="light-mode">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
     <!-- Preloader -->
     <div class="preloader">
         <div class="shield">
@@ -20,9 +26,12 @@
         </div>
         <p>SDM Security</p>
     </div>
+    
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
 
     <!-- Header -->
-    <header>
+    <header class="glass-header">
         <div class="container">
             <div class="logo">
                 <a href="index.html">
@@ -49,119 +58,193 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="animate-text">Trusted Security Solutions</h1>
-            <h2 class="animate-text-delay">Your safety is our priority</h2>
-            <p class="animate-text-delay-2">SDM Security & Bouncer Services provides professional security solutions across India</p>
-            <div class="hero-buttons animate-text-delay-3">
-                <a href="services.html" class="btn btn-primary">Our Services</a>
-                <a href="contact.html" class="btn btn-secondary">Get a Quote</a>
+            <h1 class="glitch-text" data-text="Trusted Security Solutions">Trusted Security Solutions</h1>
+            <div class="typewriter-container">
+                <h2 class="typewriter">Your safety is our priority</h2>
             </div>
+            <p class="gradient-text animate-text-delay-2">SDM Security & Bouncer Services provides professional security solutions across India</p>
+            <div class="hero-buttons animate-text-delay-3">
+                <a href="services.html" class="btn btn-primary pulse">Our Services</a>
+                <a href="contact.html" class="btn btn-secondary glow">Get a Quote</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
         </div>
         <div class="hero-overlay"></div>
     </section>
 
     <!-- About Section Preview -->
-    <section class="about-preview">
+    <section class="about-preview parallax-section" data-speed="0.5">
         <div class="container">
-            <div class="section-heading">
-                <h2>Who We Are</h2>
+            <div class="section-heading reveal-up">
+                <h2 class="gradient-heading">Who We Are</h2>
                 <div class="underline"></div>
             </div>
             <div class="about-grid">
-                <div class="about-image reveal-left">
+                <div class="about-image tilt-element reveal-left">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
                     <div class="image-container">
                         <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Security professionals">
                     </div>
                 </div>
                 <div class="about-text reveal-right">
-                    <h3>Securing India Since 2010</h3>
+                    <h3 class="glow-text">Securing India Since 2010</h3>
                     <p>SDM Security & Bouncer Services is a premier security solutions provider with a national presence and over a decade of experience in the industry.</p>
                     <p>We specialize in event security, personal protection, corporate security, and bouncer services with a team of highly trained professionals.</p>
-                    <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                    <a href="about.html" class="btn btn-outline hover-effect">Learn More About Us</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services parallax-section" data-speed="-0.3">
         <div class="container">
-            <div class="section-heading">
-                <h2>Our Services</h2>
+            <div class="section-heading reveal-up">
+                <h2 class="gradient-heading">Our Services</h2>
                 <div class="underline"></div>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card glass-card tilt-element">
                     <div class="service-icon">
                         <i class="fas fa-user-shield"></i>
                     </div>
                     <h3>Event Security</h3>
                     <p>Comprehensive security solutions for events of all sizes, from corporate meetings to large-scale festivals.</p>
+                    <div class="service-hover">
+                        <a href="services.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card glass-card tilt-element">
                     <div class="service-icon">
                         <i class="fas fa-building"></i>
                     </div>
                     <h3>Corporate Security</h3>
                     <p>Dedicated security personnel for offices, industrial sites, and corporate premises.</p>
+                    <div class="service-hover">
+                        <a href="services.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card glass-card tilt-element">
                     <div class="service-icon">
                         <i class="fas fa-user-tie"></i>
                     </div>
                     <h3>Bouncer Services</h3>
                     <p>Professional bouncers for clubs, bars, events, and venues requiring crowd management.</p>
+                    <div class="service-hover">
+                        <a href="services.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card glass-card tilt-element">
                     <div class="service-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3>VIP Protection</h3>
                     <p>Specialized security services for high-profile individuals requiring discrete protection.</p>
+                    <div class="service-hover">
+                        <a href="services.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="services-cta">
-                <a href="services.html" class="btn btn-primary">View All Services</a>
+            <div class="services-cta reveal-up">
+                <a href="services.html" class="btn btn-primary hover-effect">View All Services</a>
             </div>
         </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section parallax-section" data-speed="0.2">
+        <div class="container">
+            <div class="counters-grid">
+                <div class="counter-box reveal-up">
+                    <div class="counter-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="counter" data-target="500">0</div>
+                    <h3>Security Professionals</h3>
+                </div>
+                <div class="counter-box reveal-up delay-1">
+                    <div class="counter-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="counter" data-target="150">0</div>
+                    <h3>Corporate Clients</h3>
+                </div>
+                <div class="counter-box reveal-up delay-2">
+                    <div class="counter-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="counter" data-target="1000">0</div>
+                    <h3>Events Secured</h3>
+                </div>
+                <div class="counter-box reveal-up delay-3">
+                    <div class="counter-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="counter" data-target="25">0</div>
+                    <h3>Cities Covered</h3>
+                </div>
+            </div>
+        </div>
+        <div class="counter-overlay"></div>
     </section>
 
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
-            <div class="section-heading light">
-                <h2>What Our Clients Say</h2>
+            <div class="section-heading light reveal-up">
+                <h2 class="gradient-heading">What Our Clients Say</h2>
                 <div class="underline"></div>
             </div>
             <div class="swiper testimonial-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="testimonial-card">
+                        <div class="testimonial-card glass-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
                             <p>"SDM Security provided exceptional service for our corporate event. Their team was professional, vigilant, and courteous."</p>
                             <div class="client-info">
-                                <h4>Rahul Sharma</h4>
-                                <p>Event Manager, TechConf India</p>
+                                <div class="client-image">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Rahul Sharma">
+                                </div>
+                                <div>
+                                    <h4>Rahul Sharma</h4>
+                                    <p>Event Manager, TechConf India</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card">
+                        <div class="testimonial-card glass-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
                             <p>"We've been using SDM for our hotel security for the past 3 years. Their staff is well-trained and always alert. Highly recommended!"</p>
                             <div class="client-info">
-                                <h4>Priya Patel</h4>
-                                <p>General Manager, Luxury Hotel</p>
+                                <div class="client-image">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Priya Patel">
+                                </div>
+                                <div>
+                                    <h4>Priya Patel</h4>
+                                    <p>General Manager, Luxury Hotel</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card">
+                        <div class="testimonial-card glass-card">
                             <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p>"The bouncers provided by SDwM were perfect for our club opening. Professional, imposing, yet friendly with the guests."</p>
+                            <p>"The bouncers provided by SSM were perfect for our club opening. Professional, imposing, yet friendly with the guests."</p>
                             <div class="client-info">
-                                <h4>Vikram Singh</h4>
-                                <p>Owner, Pulse Nightclub</p>
+                                <div class="client-image">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Vikram Singh">
+                                </div>
+                                <div>
+                                    <h4>Vikram Singh</h4>
+                                    <p>Owner, Pulse Nightclub</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -172,12 +255,12 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="cta">
+    <section class="cta parallax-section" data-speed="0.3">
         <div class="container">
-            <div class="cta-content">
-                <h2>Need Security Solutions?</h2>
+            <div class="cta-content glass-card">
+                <h2 class="gradient-text">Need Security Solutions?</h2>
                 <p>Contact us today for a free consultation</p>
-                <a href="contact.html" class="btn btn-white">Contact Us</a>
+                <a href="contact.html" class="btn btn-white glow">Contact Us</a>
             </div>
         </div>
     </section>
@@ -192,34 +275,34 @@
                     </div>
                     <p>Professional security and bouncer services across India. Your safety is our commitment.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover-effect"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover-effect"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover-effect"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover-effect"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <p><i class="fas fa-map-marker-alt"></i> GMS Road, Dehradun, India</p>
                     <p><i class="fas fa-phone"></i> +91-919393693</p>
-                    <p><i class="fas fa-envelope"></i> info@ssmsecurity.com</p>
+                    <p><i class="fas fa-envelope"></i> info@sdmsecurity.com</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" class="hover-effect">Home</a></li>
+                        <li><a href="about.html" class="hover-effect">About Us</a></li>
+                        <li><a href="services.html" class="hover-effect">Services</a></li>
+                        <li><a href="gallery.html" class="hover-effect">Gallery</a></li>
+                        <li><a href="contact.html" class="hover-effect">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-newsletter">
                     <h3>Newsletter</h3>
                     <p>Subscribe to our newsletter for the latest updates</p>
-                    <form class="newsletter-form">
+                    <form class="newsletter-form glass-effect">
                         <input type="email" placeholder="Your Email">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="glow-button"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -229,9 +312,11 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
